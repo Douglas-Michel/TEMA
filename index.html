@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preferências de Tema</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="modo-claro">
+
+    <div class="container">
+        <h1>Preferências</h1>
+        <p>Escolha o tema que você prefere para a interface.</p>
+        <button id="temaBtn" class="tema-btn">Alterar Tema</button>
+    </div>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <h2>Escolha o tema</h2>
+            <div class="tema-opcoes">
+                <button id="tema-escuro" class="opcao">
+                    <img src="img/moon.png" alt="Modo Escuro">
+                    <span>Modo Escuro</span>
+                </button>
+                <button id="tema-claro" class="opcao">
+                    <img src="img/sun.png" alt="Modo Claro">
+                    <span>Modo Claro</span>
+                </button>
+            </div>
+            <div class="modal-buttons">
+                <button id="cancelar" class="botao-cancelar">Agora não</button>
+                <button id="confirmar" class="botao-confirmar">Confirmar</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>

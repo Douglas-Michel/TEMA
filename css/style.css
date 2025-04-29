@@ -1,0 +1,150 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.modo-claro {
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+body.modo-escuro {
+    background-color: #2c2c2c;
+    color: #f9f9f9;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.tema-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #6200ea;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.tema-btn:hover {
+    background-color: #4500b5;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.tema-opcoes {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.opcao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 10px;
+    transition: border-color 0.3s, transform 0.3s;
+}
+
+.opcao img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+.opcao span {
+    font-size: 14px;
+    color: #333;
+}
+
+.opcao:hover {
+    transform: scale(1.1);
+}
+
+.opcao.selecionado {
+    border-color: #6200ea;
+}
+
+.modal-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.botao-cancelar {
+    background-color: transparent;
+    color: #6200ea;
+    border: 2px solid #6200ea;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.botao-cancelar:hover {
+    background-color: #6200ea;
+    color: white;
+}
+
+.botao-confirmar {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao-confirmar:hover {
+    background-color: #388e3c;
+}

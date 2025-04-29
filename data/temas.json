@@ -1,0 +1,16 @@
+{
+    "temas": [
+        {
+            "id": "tema-escuro",
+            "nome": "Tema Escuro",
+            "icone": "img/moon.png",
+            "classe": "modo-escuro"
+        },
+        {
+            "id": "tema-claro",
+            "nome": "Tema Claro",
+            "icone": "img/sun.png",
+            "classe": "modo-claro"
+        }
+    ]
+}
